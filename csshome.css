@@ -1,0 +1,109 @@
+/*Estilizando menu e sub menu*/
+
+*{	margin:0px;
+	padding:0x;
+     
+}
+body{
+	background-color:#F2F2F2;
+}
+
+.menu ul li{
+	background-color: #9E1932;
+	color:white;
+	float:left;
+	width: 224px;/*largura*/
+	height: 70px;/*altura*/
+	display: inline-block;
+	text-align:center;
+	line-height:70px;/*centraliza o texto na vertical*/
+	font-size:25px;
+	position:relative;
+}
+.menu ul li:hover {
+	background-color:#64101F;
+}
+.menu ul{
+	padding:0px;
+}
+.menu ul ul{
+	display:none;
+}
+.menu ul li:hover > ul /*direcoina para ul*/{
+		display:block;
+	}
+.menu ul ul li:hover{
+	background-color:#470B16;
+}
+.menu a{
+	color:white;
+	text-decoration:none/*tira marcaçao do link*/
+}
+
+
+
+/*Contato*/
+
+.contato{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 10px 45px;
+     background: #2F6F33;
+     width: 500px;
+     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.contato h2{
+     color: #F2F2F2;
+     font-size: 2.5rem;
+     margin: 2rem;
+}
+.contato form{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+}
+form label{
+     color: #F2F2F2;
+     font-size: 17px;
+     margin-bottom: 4px;
+}
+form input{
+     padding: 15px;
+     outline: none;
+     border: 0;
+     margin-bottom: 20px;
+     font-size: 15px;
+     transition: all 0.5s;
+}
+form input:focus{
+     border-radius: 16px;
+}
+form textarea{
+     padding: 10px;
+     outline: none;
+     border: 0;
+     font-size: 15px;
+     margin-bottom: 30px;
+     transition: all 0.5s;
+     resize: none;
+}
+form textarea:focus{
+     border-radius: 16px;
+}
+.botao{
+     padding: 15px;
+     cursor: pointer;
+     font-size: 16px;
+     background: transparent;
+     border: 2px solid #F2F2F2;
+     color: #F2F2F2;
+     transition: all 1s;
+     margin-bottom: 20px;
+}
+.botao:hover{
+     background-color: #F2F2F2;
+     color: #2F6F33;
+     border-radius: 16px;
+}
